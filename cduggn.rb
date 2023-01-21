@@ -5,11 +5,11 @@
 class Cduggn < Formula
   desc ""
   homepage "https://github.com/cduggn/ccExplorer"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
-    url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.5/ccExplorer_0.1.5_darwin_all.tar.gz"
-    sha256 "9b3e62c0c1db4df8f298e901a3bf2b4ef0be3b6ac41f70578561755b171bd93a"
+    url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.6/ccExplorer_0.1.6_darwin_all.tar.gz"
+    sha256 "65187c233127d24fd745cd3342556f8ef65c9a2502621594f5502d42f119ee73"
 
     def install
       bin.install "ccExplorer"
@@ -18,24 +18,24 @@ class Cduggn < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.5/ccExplorer_0.1.5_linux_armv6.tar.gz"
-      sha256 "8779da2f027a9fa8d36d3c898ddad0ba441feca23f1e95206bdd9f10d8e79837"
+      url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.6/ccExplorer_0.1.6_linux_armv6.tar.gz"
+      sha256 "7f9bee68bf7406a2b2571bf52d194744480df25ee6481ea870a748ad0f2b3a9a"
 
       def install
         bin.install "ccexplorer"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.5/ccExplorer_0.1.5_linux_amd64.tar.gz"
-      sha256 "eb2f3930713925e2bc9e8a19e76bb702a082c2188328bf47ec2f148b62bf01a4"
+      url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.6/ccExplorer_0.1.6_linux_amd64.tar.gz"
+      sha256 "8aa42aec1860f329c6e77feb3ab221e9ddda7f910a6989914144d73c1763db8c"
 
       def install
         bin.install "ccexplorer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.5/ccExplorer_0.1.5_linux_arm64.tar.gz"
-      sha256 "0099f20dabada340f12d12938e3efd1aba37798e8b8975c68034fec0c46d21df"
+      url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.6/ccExplorer_0.1.6_linux_arm64.tar.gz"
+      sha256 "ec5c3e6680b2870068da1bf63e61208229f203268d2660296064fb231f4fee29"
 
       def install
         bin.install "ccexplorer"
