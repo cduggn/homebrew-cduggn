@@ -5,11 +5,11 @@
 class Cduggn < Formula
   desc ""
   homepage "https://github.com/cduggn/ccExplorer"
-  version "0.1.6"
+  version "0.1.9"
 
   on_macos do
-    url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.6/ccExplorer_0.1.6_darwin_all.tar.gz"
-    sha256 "65187c233127d24fd745cd3342556f8ef65c9a2502621594f5502d42f119ee73"
+    url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.9/ccExplorer_0.1.9_darwin_all.tar.gz"
+    sha256 "89ccc4c66f6b8328c8667acee2092161be6947479462ccd4f52a1c3fa6c39cb3"
 
     def install
       bin.install "ccExplorer"
@@ -17,25 +17,25 @@ class Cduggn < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.6/ccExplorer_0.1.6_linux_armv6.tar.gz"
-      sha256 "7f9bee68bf7406a2b2571bf52d194744480df25ee6481ea870a748ad0f2b3a9a"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.9/ccExplorer_0.1.9_linux_arm64.tar.gz"
+      sha256 "a50055feb6f4b66f4ccc41b937a438f513fbe15d2980098b5f49987a01be79af"
 
       def install
         bin.install "ccexplorer"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.6/ccExplorer_0.1.6_linux_amd64.tar.gz"
-      sha256 "8aa42aec1860f329c6e77feb3ab221e9ddda7f910a6989914144d73c1763db8c"
+      url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.9/ccExplorer_0.1.9_linux_amd64.tar.gz"
+      sha256 "728aef77cacbcdbada8a70fe724daa22947f9aaf6959498becfc29feaea328a8"
 
       def install
         bin.install "ccexplorer"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.6/ccExplorer_0.1.6_linux_arm64.tar.gz"
-      sha256 "ec5c3e6680b2870068da1bf63e61208229f203268d2660296064fb231f4fee29"
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/cduggn/ccExplorer/releases/download/v0.1.9/ccExplorer_0.1.9_linux_armv6.tar.gz"
+      sha256 "d199fe8661cfbfcb56c83136f146bd064ae6e179083ddf905d937658ffa7bade"
 
       def install
         bin.install "ccexplorer"
