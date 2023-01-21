@@ -1,2 +1,2 @@
 # homebrew-cduggn
-Homebrew tap
+Homebrew tap for cduggn projects
