@@ -5,20 +5,20 @@
 class Ccexplorer < Formula
   desc ""
   homepage "https://github.com/cduggn/ccexplorer"
-  version "0.4.8"
+  version "0.4.9"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cduggn/ccExplorer/releases/download/v0.4.8/ccExplorer_0.4.8_darwin_arm64.tar.gz"
-      sha256 "22837e5be0845c3d0f1cf28c654210c01ba2efeb0de81ccb18f541c74bbf050a"
+      url "https://github.com/cduggn/ccExplorer/releases/download/v0.4.9/ccExplorer_0.4.9_darwin_arm64.tar.gz"
+      sha256 "53b2c8b63d4d375f0c853beab1def6a9f0a40699c4775859e537762b8f52fed6"
 
       def install
         bin.install "ccexplorer"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cduggn/ccExplorer/releases/download/v0.4.8/ccExplorer_0.4.8_darwin_amd64.tar.gz"
-      sha256 "c09e4cfad65e7d6b30ded0942514360e624bbde4bd029669011a181b6cac2337"
+      url "https://github.com/cduggn/ccExplorer/releases/download/v0.4.9/ccExplorer_0.4.9_darwin_amd64.tar.gz"
+      sha256 "4d6bccb44dec7665ff7fef29dace69acf53b1b515c5ba4160ef15f22b5aa25d2"
 
       def install
         bin.install "ccexplorer"
@@ -28,24 +28,24 @@ class Ccexplorer < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cduggn/ccExplorer/releases/download/v0.4.8/ccExplorer_0.4.8_linux_arm64.tar.gz"
-      sha256 "841913e280ae38d6d4e1e108f4ea67809096408b2f8442acc9f88a2afdeb88f2"
-
-      def install
-        bin.install "ccexplorer"
-      end
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/cduggn/ccExplorer/releases/download/v0.4.8/ccExplorer_0.4.8_linux_amd64.tar.gz"
-      sha256 "a8b9d294f1a0a0d5bd3728d1327ce615a4ff9c5e147d75dbe429bb86a47a3fa5"
+      url "https://github.com/cduggn/ccExplorer/releases/download/v0.4.9/ccExplorer_0.4.9_linux_arm64.tar.gz"
+      sha256 "446a0fea46a4dd7d2540d829fe047f9f54df4289a75ac00c734044a1e97e3144"
 
       def install
         bin.install "ccexplorer"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/cduggn/ccExplorer/releases/download/v0.4.8/ccExplorer_0.4.8_linux_armv6.tar.gz"
-      sha256 "856498e6933a9c57019c2540cc3b3828c2763463e55b024178c00af97c98eb2e"
+      url "https://github.com/cduggn/ccExplorer/releases/download/v0.4.9/ccExplorer_0.4.9_linux_armv6.tar.gz"
+      sha256 "65a08f4dd25652dd51597f77b63ac0e075dd86841c4e04f4e5a7d960acf9c1f1"
+
+      def install
+        bin.install "ccexplorer"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/cduggn/ccExplorer/releases/download/v0.4.9/ccExplorer_0.4.9_linux_amd64.tar.gz"
+      sha256 "0610383e150251edaaed59342d31770d47f48deda1cce29f09d1b40ac2ac25db"
 
       def install
         bin.install "ccexplorer"
